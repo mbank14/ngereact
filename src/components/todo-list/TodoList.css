@@ -1,0 +1,16 @@
+ul {
+    list-style: none;
+    padding: .5rem;
+}
+
+ul li{
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(73, 73, 73, 0.548);
+}
+
+.TodoListContainer{
+    max-height: 300px;
+    overflow: scroll;
+}
