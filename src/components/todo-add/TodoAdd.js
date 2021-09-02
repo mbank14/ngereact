@@ -12,13 +12,20 @@ const TodoAdd = (props) => {
             id: Math.floor(Math.random() * 100) + 1,
             value: getInput
         }
-
-        props.onAddTodo(newTodo)
+        if (getInput) {           
+            props.onAddTodo(newTodo)
+        } else {
+            return alert('gaboleh kosong coy')
+        }
 
         setInput('')
     }
 
     const handleInputTodo = (e) => {
+        // if (e.target.value !== '') {  
+        //     console.log(e.target.value)
+        //     console.log(e.target.value)
+        // }
         setInput(e.target.value)
     }
 
